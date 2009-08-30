@@ -1,0 +1,310 @@
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-30 09:27:40) [GET]
+
+ActionController::RoutingError (No route matches "/streams" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-30 09:28:08) [GET]
+
+NameError (uninitialized constant StreamController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelineController#index (for ::1 at 2009-08-30 09:30:22) [GET]
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for ::1 at 2009-08-30 09:30:22) [GET]
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /opt/local/lib/ruby/1.8/net/http.rb:542:in `start'
+  /opt/local/lib/ruby/1.8/net/http.rb:1035:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:146:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:180:in `token_request'
+  oauth (0.3.5) lib/oauth/consumer.rb:125:in `get_request_token'
+  /Users/heathertanner/.gem/ruby/1.8/gems/twitter-auth-0.1.22/app/controllers/sessions_controller.rb:7:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for ::1 at 2009-08-30 09:31:14) [GET]
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /opt/local/lib/ruby/1.8/net/http.rb:542:in `start'
+  /opt/local/lib/ruby/1.8/net/http.rb:1035:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:146:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:180:in `token_request'
+  oauth (0.3.5) lib/oauth/consumer.rb:125:in `get_request_token'
+  /Users/heathertanner/.gem/ruby/1.8/gems/twitter-auth-0.1.22/app/controllers/sessions_controller.rb:7:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for ::1 at 2009-08-30 09:33:47) [GET]
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /opt/local/lib/ruby/1.8/net/http.rb:542:in `start'
+  /opt/local/lib/ruby/1.8/net/http.rb:1035:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:146:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:180:in `token_request'
+  oauth (0.3.5) lib/oauth/consumer.rb:125:in `get_request_token'
+  /Users/heathertanner/.gem/ruby/1.8/gems/twitter-auth-0.1.22/app/controllers/sessions_controller.rb:7:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+** TwitterAuth initialized properly.
+
+
+Processing TimelineController#index (for ::1 at 2009-08-30 09:34:10) [GET]
+Redirected to http://localhost:3000/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for ::1 at 2009-08-30 09:34:10) [GET]
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /opt/local/lib/ruby/1.8/net/http.rb:542:in `start'
+  /opt/local/lib/ruby/1.8/net/http.rb:1035:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:146:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:180:in `token_request'
+  oauth (0.3.5) lib/oauth/consumer.rb:125:in `get_request_token'
+  /Users/heathertanner/.gem/ruby/1.8/gems/twitter-auth-0.1.22/app/controllers/sessions_controller.rb:7:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for ::1 at 2009-08-30 09:34:38) [GET]
+
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:586:in `connect'
+  /opt/local/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /opt/local/lib/ruby/1.8/net/http.rb:542:in `start'
+  /opt/local/lib/ruby/1.8/net/http.rb:1035:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:146:in `request'
+  oauth (0.3.5) lib/oauth/consumer.rb:180:in `token_request'
+  oauth (0.3.5) lib/oauth/consumer.rb:125:in `get_request_token'
+  /Users/heathertanner/.gem/ruby/1.8/gems/twitter-auth-0.1.22/app/controllers/sessions_controller.rb:7:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelineController#index (for ::1 at 2009-08-30 09:34:46) [GET]
+
+NoMethodError (undefined method `twitter' for false:FalseClass):
+  app/controllers/timeline_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelineController#index (for ::1 at 2009-08-30 09:34:57) [GET]
+Rendering timeline/index
+
+ActionView::TemplateError (undefined local variable or method `tweet' for #<ActionView::Base:0x2467a4c>) on line #3 of app/views/timeline/index.html.erb:
+1: <ul class='tweets'>  
+2:   <%# for tweet in @tweets %>  
+3:     <li><%# link_to tweet['user']['screen_name'] + ':', 'http://twitter.com/' + tweet['user']['screen_name'], :target => '_blank' %> <%= tweet['text'] %></li>  
+4:   <%# end %>  
+5: </ul>
+
+    app/views/timeline/index.html.erb:3
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TimelineController#index (for ::1 at 2009-08-30 09:36:07) [GET]
+Rendering timeline/index
+
+ActionView::TemplateError (undefined local variable or method `tweet' for #<ActionView::Base:0x260ca00>) on line #3 of app/views/timeline/index.html.erb:
+1: <ul class='tweets'>  
+2:   <%# for tweet in @tweets %>  
+3:     <li><%# link_to tweet['user']['screen_name'] + ':', 'http://twitter.com/' + tweet['user']['screen_name'], :target => '_blank' %> <%= tweet['text'] %></li>  
+4:   <%# end %>  
+5: </ul>
+
+    app/views/timeline/index.html.erb:3
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+** TwitterAuth initialized properly.
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-30 09:39:33) [GET]
+
+NameError (uninitialized constant StreamController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+** TwitterAuth initialized properly.
+** TwitterAuth initialized properly.
+
+
+Processing TimelineController#index (for ::1 at 2009-08-30 09:40:07) [GET]
+
+NoMethodError (undefined method `twitter' for false:FalseClass):
+  app/controllers/timeline_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
